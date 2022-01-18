@@ -1,0 +1,85 @@
+// -------------------- 404
+
+// body background
+
+.body404 {
+    background-image: url(imagenes/404_not_found.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    @media (max-width: $sm) {
+        background-size: 1500px;
+        background-position: center;
+    }
+
+    @media (min-width: 577px) and (max-width: $lg) {
+        background-size: 250%;
+        background-position: center;
+    }
+}
+
+// caja flex
+
+.flexNofound {
+    @include flexBox (column, wrap, space-around, center);
+    height: auto;
+    margin: 25px;
+
+
+    @media (max-width: $sm) {
+        height: 300px;
+        justify-content: space-between;
+    }
+
+    @media (min-width: 577px) and (max-width: $lg) {
+        height: 400px;
+        justify-content: space-between;
+    }
+
+    p {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 25px;
+        font-family: $default-font;
+        display:flex;
+        justify-content: center;
+
+        @media (max-width: $lg) {
+            font-size: 20px;
+            text-align: center;
+            margin: 10px 10px;
+        }
+    }
+
+    h4 {
+        border-radius: 2rem;
+        border: 2px solid gray;
+        color: white;
+        background-color: black;
+        padding: 15px;
+        font-size: 20px;
+    }
+
+// hover
+
+    li {
+        list-style:none;
+        transition: all 1s;
+    }
+
+    li:hover {
+        transition: all 1s;
+        transform: scale(1.2);
+    } 
+
+    a {
+        display:flex;
+        justify-content: center;
+        text-decoration: none;
+    }
+
+}
+
+
+
+
+

@@ -1,0 +1,67 @@
+// -------------------- LICENCIAS
+
+.licencias {
+    background-color: rgba(25, 240, 240, 0.925);
+
+    h3 {
+        padding-top: 25px;
+    }
+
+    // General Grid
+
+    .contenedorLicencias {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 350px 350px;
+        gap: 10px;
+        padding-bottom: 25px;
+        justify-content: center;
+        margin: 10px;
+
+        @media (min-width: $xs) and (max-width: $md) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 300px 300px 300px 300px;
+        }
+    
+    // flex box properties
+
+        .flexGrid {
+            text-align: center;
+            font-family: 'Gluten', cursive;
+            font-size: 35px;
+            background-color: rgba(15, 194, 218, 0.596);
+            position: relative;
+            display: flex;
+
+            img {
+                @include imgInside-box (100%, auto);
+            }
+        }
+    }
+}
+
+    // image overlay
+    
+.imageOverlay {
+    @include imageOverlay (rgba(0, 0, 0, 0.6), blur(5px), 0.8rem);
+
+    div {
+        @media (min-width: $xs) and (max-width: $sm) {
+            font-size: $h3-font-size;
+        }
+    }
+
+    p {
+        font-size: $h5-font-size;
+        margin: 20px;
+        color: white;
+
+        @media (min-width: $xs) and (max-width: $sm) {
+            font-size: $tooSmall-text;
+        }
+
+        @media (min-width: $sm) and (max-width: $xl) {
+            font-size: $small-text;
+        }
+    }
+}

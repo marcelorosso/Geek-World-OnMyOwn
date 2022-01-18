@@ -1,0 +1,114 @@
+// -------------------- HEADER
+
+header {
+    height: 480px;
+    width: 100%;
+    background: $tropical-palett; 
+
+    @media (max-width: 575px) {
+        height: 770px;
+    }
+    @media (min-width: $sm) and (max-width: $md) {
+        height: 700px;
+    }
+    
+    // navbar
+
+    #navbarSupportedContent {
+        display: block;
+        
+        @media (min-width: 577px) and (max-width: 767px) {
+            justify-content: center;
+            font-weight: bold;
+            align-items: center;
+        }
+        .dissapear {
+
+            @media (min-width: 577px) and (max-width: 767px) {
+                display: none;
+            }
+        }
+    }
+    
+    .navbar-brand {
+        transition: all 400ms;
+        
+        &:hover {
+            transition: all 400ms;
+            transform: scale(1.05);
+        } 
+    
+        a {
+            font-family: $default-font;
+        }   
+    }
+
+    // logo and menu
+    
+    .flexHeader {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 10px;
+
+        // logo
+
+        div {
+
+            @media (max-width: $md) {
+                display:flex;
+                justify-content: center;
+            }
+
+            img{
+                height: 250px;
+                padding: 5px;
+                border: 5px double;
+            }
+        }
+
+        // menu
+
+        div {
+            nav {
+                ul {
+                    display: flex;
+                    list-style: none;
+                    justify-content:space-evenly;
+                    font-family: $custom-font;
+                    font-size: 30px;
+                    align-items: center;
+
+                    @media (max-width: $md) {
+                        display:flex;
+                        flex-direction: column;
+                    }
+                    
+                    li {
+                        transition: all 400ms;
+                        
+                        &:hover {
+                            transition: all 400ms;
+                            transform: scale(1.5);
+                        } 
+                    }
+                    
+                    a {
+                        font-family: $custom-font;
+                        font-size: 30px;
+                        text-decoration: none;
+                        color: black;
+
+                        @media (max-width: $md) {
+                            font-size: $h3-font-size;
+                            font-family: $default-font;
+                        }
+
+                        @media (max-width: $sm) {
+                            font-size: $h5-font-size;
+                        }
+                    }
+                }
+            }
+        }  
+    }
+}

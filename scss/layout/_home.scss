@@ -1,0 +1,218 @@
+// -------------------- HOME
+
+//-- section one 
+
+.sectionOnebackground {
+
+    // background
+
+    background-image: url(destacados/section_1.jpg);
+    background-size: cover;
+    font-family: $default-font;
+    width: 100%;
+
+    .text-center {
+        @media (max-width: $sm) {
+            font-size: $h5-font-size;
+        }
+    }
+
+    .container-fluid {
+        #destacados {
+            padding-top: 25px;
+        }
+
+        h4 {
+            @media (max-width: $sm) {
+                font-size: $h5-font-size;
+            }
+        }
+
+        @media (max-width: $md) {
+            width: 90%;
+            padding-left: 0%;
+            padding-right: 0%;
+        }
+    
+    //--section one first part
+    
+    // carousel    
+
+        .carousel-inner {
+            border: 2px solid black;
+        }
+
+        .imgCarousel {
+
+            img {
+                height: auto;
+                width: 100%;
+            }
+
+            .carousel-caption {
+                @media (max-width: $sm) {
+                    padding: 0;
+                }                
+            }
+
+            p {
+                font-family: $custom-font;
+                font-size: $h4-font-size;
+                @media (max-width: $sm) {
+                    font-size: $font-size-base;
+                }
+            }
+
+            h3 {
+                @media (max-width: $sm) {
+                    font-size: $h5-font-size;
+                }
+            }
+        }
+
+        .imagenMes {
+            border: 8px double black;
+            height: $normal;
+        }
+    }
+
+    //--section one second part 
+
+    .destacadosMes {
+        justify-content: space-around;
+
+        @media (max-width: $xl) {
+            text-align: center;
+            justify-content: center;
+        }
+
+        div {
+            text-align-last: center;
+        }
+
+        img {
+
+            @media (max-width: $md) {
+                max-width: 190px;
+                min-width: 190px;
+            }
+
+            @media (min-width: $lg) and (max-width: $xl) {
+                width: 300px;
+                height: 400px;
+            }
+        }
+    }
+}
+
+//-- section two
+
+.sectionTwo {
+    font-family: $default-font;
+    height: auto;
+    width: 100%;
+    background: $cold-body;
+    margin-bottom: 10px;
+
+    // box
+
+    #art1 {
+        @include flexBox (row, nowrap, space-around, flex-start);
+
+        @media (max-width: $lg) {
+            @include flexBox (column, wrap, center, center);
+        }
+
+    // videos (iframe)
+
+        article {
+            .divSection2 {
+                iframe {     
+                    padding: 0%;
+                    box-shadow: 0px 0px 8px 8px lightgray;
+
+                    @media (min-width: $xs) and (max-width: $sm) {
+                        width: 280px;
+                        height: 280px;     
+                    }
+
+                    @media (min-width: $md) and (max-width: $lg) {
+                        width: 728px;
+                        height: 400px;     
+                    }
+
+                    @media (min-width: $lg) and (max-width: $xl) {
+                        width: 300px;
+                        height: 300px;     
+                    }
+                }
+            }
+
+            h3,
+            p {
+                padding-top: 20px;
+                font-size: $normal-text;
+                text-align: center;
+            }
+        }
+    }
+}
+
+//-- section three
+
+.sectionThreebackground {
+    background: $vintage-body; 
+    background-size: cover;
+    font-family: $default-font;
+    width: 100%;
+
+    #ofertas {
+        margin-top: 25px;
+    }
+
+    // effects
+
+    div {
+        .zoom {
+            img {
+                transition: all 400ms;
+
+                &:hover {
+                    transform: scale(1.05);
+                    transition: all 400ms;
+                }
+            }
+        }
+    
+    // cards differents properties
+
+        .card-text {
+            @media (min-width: $md) and (max-width: $lg) {
+                min-height: 288px;    
+            }
+        }
+        .card-title {
+            @media (min-width: $xl) {
+                height: 58px;   
+            }
+        }
+        .card-body {
+            @include flexBox (column, wrap, space-around, center);
+            padding: 1.50rem;
+
+            .btn-primary {
+                font-family: $default-font;
+                transition: all 400ms;
+
+                &:hover {
+                    transition: all 400ms;
+                    transform: scale(1.15);
+                }
+            }
+            
+            @media (min-width: $lg) {
+                height: 400px;   
+            }
+        }
+    }
+}

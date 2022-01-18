@@ -1,0 +1,109 @@
+// -------------------- NOVEDADES
+
+
+// background
+
+.sectionNews {
+    background: $pink-palett;
+    position: relative;
+
+// box
+
+    .flexNovedades {
+        @include flexBox (column, nowrap, center, center);
+        height: auto;
+        font-family: $custom-font;
+        justify-self: center;
+        font-size: 30px;
+        padding-bottom: 25px;
+
+        div {
+            h2 {
+                margin: 10px;
+
+                @media (max-width: $lg) {
+                    font-size: 30px; 
+                }
+            }
+        }
+
+        .newsTitle {
+            h4 {
+                margin: 10px;
+
+                @media (max-width: $lg) {
+                    font-family: $default-font;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+// card box
+
+.releaseNews {
+    @include flexBox (row, nowrap, center, center);
+    background-color: black;
+    margin: 20px;
+    border-radius: 4rem;
+    min-width: 750px;
+
+    @media (min-width: $xs) and (max-width: $md) {
+        flex-direction: column;
+        min-width: 0;
+    }
+    
+    // image properties
+
+    div {
+        width: 100%;
+        img {
+            min-width: 470px;
+            min-height: 260px;
+            border-radius: 4rem;
+            @extend .img;
+
+            @media (min-width: $xs) and (max-width: $md) {
+                flex-direction: column;
+                min-width: 0;
+            }
+        }
+    } 
+    
+    // card body properties
+
+    .card-bodies {
+        @include flexBox (column, nowrap, center, center);
+        height: auto;
+        width: auto;
+        padding: 0.5rem;
+        color: white;
+        gap: 20px;
+
+        p {
+            color: white;
+        }
+        h4 {
+            font-size: $h2-font-size;
+        }
+
+    // button hover and properties
+
+        .btn-primary {
+            transition: all 400ms;
+            border: 1px solid white;
+            background-color: transparent;
+            font-size: 20px;
+            font-family: $custom-font;
+
+            &:hover {
+                transition: all 400ms;
+                transform: scale(1.15);
+            }
+        }
+    }
+}
+
+
+

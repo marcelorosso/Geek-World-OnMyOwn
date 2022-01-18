@@ -1,0 +1,99 @@
+
+// -------------------- OWN VARIABLES
+
+// font
+
+$default-font: 'Fuzzy Bubbles', cursive;
+$custom-font: 'Gluten', cursive;
+$profesional-font: Arial, Helvetica, sans-serif;
+
+// text size
+
+$big-text: 1.6rem;
+$medium-text: 1.4rem;
+$normal-text: 1.2rem;
+$small-text: 1rem;
+$tooSmall-text: 0.8rem;
+
+// body color palettes 
+
+$cold-body: linear-gradient(180deg, #5584AC 0%,  #95D1CC 75%, #F6F2D4 90%, #F6F6F6 100%);
+$spring-body: linear-gradient(180deg, #064635 0%,#519259 75%, #F0BB62 90%, #F4EEA9 100%);
+$vintage-body: linear-gradient(180deg, #8E806A 0%, #C3B091 15%, #E4CDA7 40%, #FFE6BC 80%);
+$pink-palett: linear-gradient(180deg, #FFC7C7 0%, #FFE2E2 15%, #F6F6F6 40%, #8785A2 80%);
+$own-palett: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.9304096638655462) 0%, rgba(0,212,255,1) 100%);
+$tropical-palett: linear-gradient(180deg, #009DAE 35%, #71DFE7 80%, #C2FFF9 100%);
+$dark-palett: linear-gradient(#141e30, #243b55);
+
+// img size
+
+$big: 550px;
+$normal: 311px;
+$small: 250px;
+
+// -------------------- BOOTSTRAP VARIABLES
+
+// title size and bold
+
+$font-size-base:              1rem;
+$font-size-lg:                $font-size-base * 1.25;
+$font-size-sm:                $font-size-base * .875;
+
+$h1-font-size:                $font-size-base * 2.5;
+$h2-font-size:                $font-size-base * 2;
+$h3-font-size:                $font-size-base * 1.75;
+$h4-font-size:                $font-size-base * 1.5;
+$h5-font-size:                $font-size-base * 1.25;
+$h6-font-size:                $font-size-base;
+
+// font weight
+
+$font-weight-lighter:         lighter;
+$font-weight-light:           200;
+$font-weight-normal:          400;
+$font-weight-bold:            600;
+$font-weight-bolder:          bolder;
+
+// breakpoints (mobile first)
+
+$xs: 320px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
+// colors
+
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+$blue:    #007bff !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #28a745 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+
+$primary:       $blue;
+$secondary:     $gray-600;
+$success:       $green;
+$info:          $cyan;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-100;
+$dark:          $gray-800;
+

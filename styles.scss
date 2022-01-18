@@ -1,0 +1,18 @@
+// import abstracts
+
+@import "./scss/abstracts/variables";
+@import "./scss/abstracts/mixin";
+
+// import layout
+
+@import "./scss/layout/general";
+@import "./scss/layout/header";
+@import "./scss/layout/home";
+@import "./scss/layout/footer";
+
+@import "./scss/layout/contacto";
+@import "./scss/layout/licencias";
+@import "./scss/layout/novedades";
+@import "./scss/layout/entretenimiento";
+@import "./scss/layout/404";
+@import "./scss/layout/login";

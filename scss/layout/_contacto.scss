@@ -1,0 +1,119 @@
+// -------------------- FOOTER
+
+// background
+
+.sectionContact {
+    background-image: url(https://images.alphacoders.com/180/thumb-1920-180561.jpg);
+    background-size: repeat;
+
+    @media (max-width: $xl) {
+        background-size: 1800px;
+        background-position: center;
+    }
+    
+    background-color: rgba(248, 184, 234, 0.616);
+    padding: 25px;
+    
+// box
+
+    div {
+        display:flex;
+        justify-content: center;
+
+    // fieldset properties
+
+        fieldset {
+            display:flex;
+            flex-direction: column;
+            letter-spacing: 1px;
+            font-family: $profesional-font;
+            font-size: 20px;
+            color: white;
+            border: double 4px;
+            padding: 20px;
+            width: auto;
+
+    // form properties
+
+            form {
+
+                .columnDate {
+                    display:flex;
+                    flex-direction:column;
+                    margin-top: 10px;
+                }
+                    
+                .check {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-top: 10px 0px;
+
+                    @media (max-width: 375px) {
+                        display: none;
+                    }
+                }
+
+                .listContact{
+                    display:flex;
+                    flex-direction:column;
+                    margin-bottom: 10px;
+                }
+                .comentariosContact {
+                    display:flex;
+                    flex-direction:column;
+                }
+
+    // send-rest button properties and hover
+    
+                div {
+                    display:flex;
+                    justify-content:space-evenly;
+
+                    .sendContact {
+                        border: 3px solid white;
+                        font-size: 15px;
+                        padding: 5px;
+                        font-family:monospace;
+                    }
+                    .sendContact:active {
+                        transform:rotate(360deg);
+                    }
+                    .sendContact:hover {
+                        background-color: white;
+                        font-family: 'Grechen Fuemen', cursive;
+                        padding: 5px;
+                        border-radius: 5px;
+                        border: double;
+                        font-weight:bold;
+                        font-size: 20px;
+                        transition: all 1s;
+                    }
+                    .GetOutcontact {
+                        border: 3px solid white;
+                        font-size: 15px;
+                        padding: 5px;
+                        font-family:monospace;
+                    }
+                    .GetOutcontact:active {
+                        transform:rotate(-360deg);
+                    }
+                    .GetOutcontact:hover {
+                        background-color: white;
+                        font-family: 'Grechen Fuemen', cursive;
+                        padding: 5px;
+                        border-radius: 5px;
+                        border: double;
+                        font-weight:bold;
+                        font-size: 20px;
+                        transition: all 1s;
+                    }
+                }
+            } 
+        } 
+    }
+} 
+
+
+
+
